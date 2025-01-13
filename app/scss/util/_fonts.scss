@@ -1,0 +1,9 @@
+// local font faces
+@font-face {
+    font-family: 'Open sans';
+    src: local("Open sans"), 
+    url('../../assets/webfonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+// variables
+$font: 'Open sans', sans-serif;

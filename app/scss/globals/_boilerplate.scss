@@ -1,3 +1,5 @@
+@use '../util' as u;
+
 html{
     box-sizing: border-box;
     font-size: 100%;
@@ -14,7 +16,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(15, 13, 13);
-    color: rgb(255, 255, 255);
+    font-family: u.$font;
+    background-color: var(--primary-color);
+    color: var(--txt-color);
 }
