@@ -1,0 +1,46 @@
+// brekpoints for minwidths i.e from the specified value upwards to the next specified value
+/***break point***/
+// mobile -- 700px
+// tablet -- 900px
+// small-monitors -- 1440px
+// large- monitor -- >1440px
+
+// To convert pixel units to em units divide the pixel values by 16 1.e(1em = 16px)
+
+// breakpoints up map
+$breakpoints-up: (
+    "medium": 43.75em,
+    "large": 56.25em,
+    "ex-large": 90em
+);
+
+
+// min-width mixin
+@mixin breakpoints-up($size) {
+    @media screen and (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+
+
+// brekpoints for max-width i.e from the specified value downward to the next specified value
+/***break point***/
+// small -- 699.98px
+// medium -- 899.98px
+// large -- 1439.98px
+
+// breakpoints down map
+$breakpoints-down: (
+    "small": 43.7485em,
+    "medium": 56.2485em,
+    "large": 89.9985em
+);
+
+
+// max-width mixin 
+@mixin breakpoints-down($size) {
+    @media screen and (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
