@@ -1,3 +1,4 @@
+@use 'functions' as f;
 // brekpoints for minwidths i.e from the specified value upwards to the next specified value
 /***break point***/
 // mobile -- 700px
@@ -9,9 +10,9 @@
 
 // breakpoints up map
 $breakpoints-up: (
-    "medium": 43.75em,
-    "large": 56.25em,
-    "ex-large": 90em
+    "medium": f.em(700),
+    "large": f.em(900),
+    "ex-large": f.em(1440)
 );
 
 
@@ -32,9 +33,9 @@ $breakpoints-up: (
 
 // breakpoints down map
 $breakpoints-down: (
-    "small": 43.7485em,
-    "medium": 56.2485em,
-    "large": 89.9985em
+    "small": f.em(699.98),
+    "medium": f.em(899.98),
+    "large": f.em(1439.98)
 );
 
 
